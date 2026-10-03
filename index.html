@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Video Editing & Color Grading | Pace Media</title>
+
+  <meta name="description" content="Explore professional video editing and color grading by Pace Media, including cinematic color grading, visual enhancement, raw footage editing and post-production.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Pace Media">
+  <meta name="theme-color" content="#111111">
+
+  <link rel="canonical" href="https://pacemedia.in/services/color-grading-videos">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Video Editing & Color Grading | Pace Media">
+  <meta property="og:description" content="Professional video editing and color grading for transforming raw footage into polished and visually engaging videos.">
+  <meta property="og:url" content="https://pacemedia.in/services/color-grading-videos">
+  <meta property="og:site_name" content="Pace Media">
+  <meta property="og:image" content="https://pacemedia.in/assets/img/white-logo.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Video Editing & Color Grading | Pace Media">
+  <meta name="twitter:description" content="Professional video editing and color grading for polished, cinematic and engaging videos.">
+  <meta name="twitter:image" content="https://pacemedia.in/assets/img/white-logo.png">
+
+  <link rel="preload"
+        as="image"
+        href="https://pacemedia.in/assets/img/white-logo.png">
+
+  <style>
+    :root {
+      --dark: #111;
+      --text: #222;
+      --muted: #666;
+      --light: #f7f7f7;
+      --white: #fff;
+      --border: #e7e7e7;
+      --accent: #111;
+      --max-width: 1160px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(17, 17, 17, 0.97);
+      border-bottom: 1px solid #292929;
+    }
+
+    .header-inner {
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .logo img {
+      width: 82px;
+      height: auto;
+    }
+
+    nav ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav a {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #111, #292929);
+      color: #fff;
+      padding: 75px 0;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+      opacity: .75;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: 18px;
+      color: #e5e5e5;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 13px 22px;
+      background: #fff;
+      color: #111;
+      border-radius: 5px;
+      font-weight: 700;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      opacity: .88;
+    }
+
+    /* Sections */
+    section {
+      padding: 65px 0;
+    }
+
+    .section-light {
+      background: var(--light);
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 17px;
+    }
+
+    .intro {
+      max-width: 850px;
+    }
+
+    /* Service cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    /* Video */
+    .video-wrap {
+      max-width: 900px;
+      margin: 30px auto 0;
+      aspect-ratio: 16 / 9;
+      background: #111;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Internal links */
+    .related-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .related-links a {
+      display: inline-block;
+      padding: 9px 14px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      background: #fff;
+      font-weight: 600;
+    }
+
+    .related-links a:hover,
+    .related-links a:focus {
+      text-decoration: underline;
+    }
+
+    /* FAQ */
+    .faq {
+      max-width: 900px;
+    }
+
+    details {
+      border-bottom: 1px solid var(--border);
+      padding: 18px 0;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    details p {
+      padding-top: 12px;
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    /* CTA */
+    .cta {
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
+
+    .cta p {
+      color: #ddd;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .contact-info {
+      margin-top: 25px;
+    }
+
+    .contact-info a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: #0b0b0b;
+      color: #ccc;
+      padding: 50px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h2,
+    footer h3 {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    footer p {
+      color: #aaa;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+    }
+
+    footer a:hover,
+    footer a:focus {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .copyright {
+      border-top: 1px solid #292929;
+      margin-top: 35px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+    }
+
+    /* Accessibility */
+    :focus-visible {
+      outline: 3px solid #777;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 800px) {
+      .grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      nav ul {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner {
+        min-height: 54px;
+      }
+
+      .logo img {
+        width: 70px;
+      }
+
+      nav ul {
+        gap: 10px;
+      }
+
+      nav li:nth-child(2),
+      nav li:nth-child(3) {
+        display: none;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 55px 0;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+
+      .grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://pacemedia.in/#organization",
+        "name": "Pace Media",
+        "url": "https://pacemedia.in/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://pacemedia.in/assets/img/white-logo.png"
+        },
+        "telephone": "+91 7204833364",
+        "email": "info@pacemedia.in"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://pacemedia.in/#website",
+        "url": "https://pacemedia.in/",
+        "name": "Pace Media",
+        "publisher": {
+          "@id": "https://pacemedia.in/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://pacemedia.in/services/color-grading-videos#webpage",
+        "url": "https://pacemedia.in/services/color-grading-videos",
+        "name": "Video Editing & Color Grading | Pace Media",
+        "description": "Explore professional video editing and color grading by Pace Media, including cinematic color grading, visual enhancement, raw footage editing and post-production.",
+        "isPartOf": {
+          "@id": "https://pacemedia.in/#website"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Video Editing & Color Grading",
+        "serviceType": "Video Editing and Color Grading",
+        "provider": {
+          "@id": "https://pacemedia.in/#organization"
+        },
+        "url": "https://pacemedia.in/services/color-grading-videos",
+        "description": "Professional video editing and color grading for transforming raw footage into polished and visually engaging videos."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is video color grading?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Color grading involves adjusting and shaping the colors of video footage to create a particular mood and visual appearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is color grading important for videos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Color grading can help create moods, support the story and give raw footage a more polished visual appearance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Pace Media provide professional video editing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pace Media provides professional video editing and color grading services for transforming raw footage into polished videos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can raw footage receive cinematic color grading?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Raw footage can be color-graded according to the requirements of the story to create rich cinematic effects."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact Pace Media?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can contact Pace Media through the contact page or by calling +91 7204833364 or +91 9900118297."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="container header-inner">
+
+      <a class="logo"
+         href="https://pacemedia.in/"
+         aria-label="Pace Media Home">
+        <img
+          src="https://pacemedia.in/assets/img/white-logo.png"
+          alt="Pace Media"
+          width="82"
+          height="auto">
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a href="https://pacemedia.in/why-us">Why Us</a>
+          </li>
+          <li>
+            <a href="https://pacemedia.in/portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="https://pacemedia.in/blog">Blogs</a>
+          </li>
+          <li>
+            <a href="https://pacemedia.in/contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+
+        <div class="eyebrow">Video Post-Production</div>
+
+        <h1>Video Editing Color Grading</h1>
+
+        <p>
+          Professional video editing and color grading can transform raw
+          footage into polished, visually engaging videos while using color
+          to support the mood and story.
+        </p>
+
+        <a class="btn"
+           href="https://pacemedia.in/contact">
+          Contact Pace Media
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section>
+      <div class="container">
+
+        <div class="intro">
+
+          <h2>Color Grading Videos</h2>
+
+          <p>
+            Understanding how colors affect emotions is the first step in
+            <a href="https://pacemedia.in/services/color-grading-videos">
+              video editing and color grading
+            </a>.
+            Colors can be used to create moods and influence how customers
+            experience visual content.
+          </p>
+
+          <p>
+            In business, evoking emotions is one of the most powerful tools.
+            Colors engage customers' senses and can help create a visual
+            connection with a business.
+          </p>
+
+          <p>
+            <a href="https://pacemedia.in/services/color-grading-videos">
+              Professional video editing
+            </a>
+            is necessary when converting raw videos into polished videos.
+            Effective color grading can improve the overall visual appearance
+            of video content.
+          </p>
+
+          <p>
+            Depending on your story requirements, we
+            <a href="https://pacemedia.in/services/color-grading-videos">
+              color-grade raw footage
+            </a>
+            to add rich cinematic effects to videos.
+          </p>
+
+          <p>
+            Investing in
+            <a href="https://pacemedia.in/services/color-grading-videos">
+              professional color grading services
+            </a>
+            can help create a consistent and engaging visual experience for
+            your audience.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section-light">
+      <div class="container">
+
+        <h2>Video Editing & Color Grading Services</h2>
+
+        <div class="grid">
+
+          <article class="card">
+            <h3>Professional Video Editing</h3>
+            <p>
+              Raw footage can be edited and refined to create polished,
+              structured and engaging video content.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Color Correction</h3>
+            <p>
+              Video colors can be adjusted to create a consistent and
+              visually balanced appearance.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Cinematic Color Grading</h3>
+            <p>
+              Story requirements can guide
+              <a href="https://pacemedia.in/services/color-grading-videos">
+                cinematic color grading
+              </a>
+              to create richer visual effects.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Visual Enhancement</h3>
+            <p>
+              Editing and color grading can enhance the overall visual
+              presentation of raw footage.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Raw Footage Processing</h3>
+            <p>
+              Raw video material can be professionally edited and color-graded
+              according to the requirements of the project.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Story-Based Color Treatment</h3>
+            <p>
+              Colors can be shaped around the story to support mood and create
+              a more engaging visual experience.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section>
+      <div class="container">
+
+        <h2>Video Editing and Color Grading Example</h2>
+
+        <p class="intro">
+          Explore a video example related to visual production and
+          post-production.
+        </p>
+
+        <div class="video-wrap">
+          <iframe
+            src="https://www.youtube.com/embed/t4IpDC7ZKVk"
+            title="Pace Media Video Editing and Color Grading"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="section-light">
+      <div class="container">
+
+        <h2>Related Video Production Services</h2>
+
+        <p class="intro">
+          Explore related Pace Media services for video production,
+          editing, animation and digital marketing.
+        </p>
+
+        <div class="related-links">
+
+          <a href="https://pacemedia.in/services/film-editing">
+            professional film video editing services
+          </a>
+
+          <a href="https://pacemedia.in/services/corporate-video">
+            corporate video production
+          </a>
+
+          <a href="https://pacemedia.in/services/2d-animation-videos">
+            2D animation video services in Mangalore
+          </a>
+
+          <a href="https://pacemedia.in/services/social-media-videos">
+            social media video services in Mangalore
+          </a>
+
+          <a href="https://pacemedia.in/services/video-album">
+            video album production
+          </a>
+
+          <a href="https://pacemedia.in/portfolio">
+            Pace Media video production portfolio
+          </a>
+
+          <a href="https://pacemedia.in/Digital-Marketing/seo">
+            SEO services in Mangalore
+          </a>
+
+          <a href="https://pacemedia.in/Digital-Marketing/web-development">
+            web development in Mangalore
+          </a>
+
+          <a href="https://pacemedia.in/Digital-Marketing/designing-and-branding">
+            branding and design in Mangalore
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <div class="container faq">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+          <summary>What is video color grading?</summary>
+          <p>
+            Color grading involves adjusting and shaping video colors to
+            create a particular mood and visual appearance that supports
+            the story.
+          </p>
+        </details>
+
+        <details>
+          <summary>Why is color grading important for videos?</summary>
+          <p>
+            Color grading can help create moods, support storytelling and
+            give raw footage a more polished visual appearance.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does Pace Media provide professional video editing?</summary>
+          <p>
+            Pace Media provides professional video editing and color grading
+            for transforming raw footage into polished videos.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can raw footage receive cinematic color grading?</summary>
+          <p>
+            Yes. Raw footage can be color-graded according to the requirements
+            of the story to create rich cinematic effects.
+          </p>
+        </details>
+
+        <details>
+          <summary>How can I contact Pace Media?</summary>
+          <p>
+            You can contact Pace Media through the
+            <a href="https://pacemedia.in/contact">
+              Pace Media contact page
+            </a>
+            or call +91 7204833364 or +91 9900118297.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+          Need professional video editing and color grading for your project?
+          Contact Pace Media to discuss your requirements.
+        </p>
+
+        <div class="contact-info">
+
+          <p>
+            <a href="tel:+917204833364">+91 7204833364</a>
+            |
+            <a href="tel:+919900118297">9900118297</a>
+          </p>
+
+          <p>
+            <a href="mailto:info@pacemedia.in">info@pacemedia.in</a>
+            |
+            <a href="mailto:pacemediaoffice@gmail.com">
+              pacemediaoffice@gmail.com
+            </a>
+          </p>
+
+        </div>
+
+        <a class="btn"
+           href="https://pacemedia.in/contact">
+          Contact Now
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <h2>About Us</h2>
+
+          <p>
+            “A picture is worth a thousand words. Video adds another
+            thousand”, Pace Media has been adding thousands to this mantra
+            with its exceptional expertise in Ad Films Production and
+            Corporate Film Making.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="https://pacemedia.in/why-us">Why Us</a>
+            </li>
+
+            <li>
+              <a href="https://pacemedia.in/portfolio">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="https://pacemedia.in/blog">Blogs</a>
+            </li>
+
+            <li>
+              <a href="https://pacemedia.in/contact">Contact</a>
+            </li>
+
+            <li>
+              <a href="https://pacemedia.in/privacy-policy">
+                Privacy Policy
+              </a>
+            </li>
+
+            <li>
+              <a href="https://pacemedia.in/career">Career</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Get In Touch</h3>
+
+          <p>
+            <a href="mailto:info@pacemedia.in">
+              info@pacemedia.in
+            </a>
+          </p>
+
+          <p>
+            <a href="mailto:pacemediaoffice@gmail.com">
+              pacemediaoffice@gmail.com
+            </a>
+          </p>
+
+          <p>
+            <a href="tel:+917204833364">
+              +91 7204833364
+            </a>
+          </p>
+
+          <p>
+            <a href="tel:+919900118297">
+              9900118297
+            </a>
+          </p>
+
+          <p>
+            <a href="https://www.facebook.com/PaceMedia.Mangalore/"
+               target="_blank"
+               rel="noopener">
+              Facebook
+            </a>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        Copyright © 2026
+        <a href="https://pacemedia.in/">Pace Media</a>.
+        All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
